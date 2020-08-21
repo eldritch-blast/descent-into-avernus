@@ -1,0 +1,6 @@
+[submodule "source/fonts/5e"]
+	path = source/fonts/5e
+	url = https://github.com/jonathonf/solbera-dnd-fonts.git
+[submodule "docs/fonts/5e"]
+	path = docs/fonts/5e
+	url = https://github.com/jonathonf/solbera-dnd-fonts.git
