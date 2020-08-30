@@ -152,7 +152,7 @@ ul {
 }
 
 ul.simple {
-    margin: 0;
+    margin: 0.5em 0;
     padding: 0 0 0.5em 1em;
     list-style: none;
     white-space: nowrap;
@@ -173,8 +173,6 @@ ul.checklist {
 }
 
 ul.flush {
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
     text-indent: -1em;
 }
 
@@ -213,8 +211,11 @@ table {
         font-family: 'Scaly Sans Italic', sans-serif;
         font-style: italic;
     }
-    .center {
+    .c {
         text-align: center;
+    }
+    .top {
+        vertical-align: top;
     }
     tfoot td {
         font-size: 14px;
@@ -227,6 +228,15 @@ table {
 // extra space.
 table + h3, table + h4 {
     margin-top: 0;
+}
+
+img {
+    margin: 0.5em 0;
+}
+
+img.float {
+    margin: 0.5em;
+    float: right;
 }
 
 // Usage:

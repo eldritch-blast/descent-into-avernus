@@ -237,7 +237,7 @@ ul {
   padding-left: 1.2em; }
 
 ul.simple {
-  margin: 0;
+  margin: 0.5em 0;
   padding: 0 0 0.5em 1em;
   list-style: none;
   white-space: nowrap; }
@@ -255,8 +255,6 @@ ul.checklist {
     height: 0.8rem; }
 
 ul.flush {
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
   text-indent: -1em; }
 
 table {
@@ -284,14 +282,23 @@ table {
   table .spell, table .magic, table .reference, table .elvish {
     font-family: 'Scaly Sans Italic', sans-serif;
     font-style: italic; }
-  table .center {
+  table .c {
     text-align: center; }
+  table .top {
+    vertical-align: top; }
   table tfoot td {
     font-size: 14px;
     line-height: normal; }
 
 table + h3, table + h4 {
   margin-top: 0; }
+
+img {
+  margin: 0.5em 0; }
+
+img.float {
+  margin: 0.5em;
+  float: right; }
 
 aside {
   font-family: 'Scaly Sans', sans-serif;
