@@ -1,15 +1,12 @@
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
 
-require 'slim'
+activate :autoprefixer do |prefix|
+  prefix.browsers = "last 2 versions"
+end
 
-# Somebody is using deprecated URI methods, which is cluttering my output
-require 'warning'
-Warning.ignore(/URI.*escape is obsolete/)
-
-#activate :autoprefixer do |prefix|
-#  prefix.browsers = "last 2 versions"
-#end
+# Use slim templates
+set :slim, tabsize: 2
 
 # Layouts
 # https://middlemanapp.com/basics/layouts/
@@ -52,5 +49,7 @@ page '/*.txt', layout: false
 # end
 
 set :build_dir, 'docs'
-
-set :slim, tabsize: 2
+# Need to clean up git repos from submodules in build output
+after_build do |builder|
+  builder.thor.run 'rm -rf docs/fonts/5e/.git'
+end
