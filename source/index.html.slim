@@ -25,5 +25,5 @@ p
   | carefully. The location documents below are optional, but will give you a leg up in creating a character that fits into the campaign.
 
 img(src='images/baldurs_gate_and_environs.png' width='764px' height='554px' alt='Baldurs Gate, Elturgard, and Environs')
-- sitemap.resources.select { |resource| resource.data.public && resource.data.type == 'location' && resource != current_page }.each do |resource|
+- sitemap.resources.select { |resource| resource.data.public && resource.data.type == 'location' && resource != current_page }.sort_by(&:path).each do |resource|
   h5 = link_to(resource.data.title, resource, relative: true)
