@@ -147,7 +147,9 @@
     padding: 1em;
     font-size: 18px;
     font-family: 'Bookinsanity', serif;
-    max-width: 800px; } }
+    max-width: 800px; }
+    body img {
+      max-width: 800px; } }
 
 @media screen {
   .divider {
@@ -248,8 +250,7 @@ ul {
 ul.simple {
   margin: 0.5em 0;
   padding: 0 0 0.5em 1em;
-  list-style: none;
-  white-space: nowrap; }
+  list-style: none; }
 
 ul.checklist {
   list-style: none;
