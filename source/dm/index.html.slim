@@ -1,0 +1,5 @@
+img(src='../images/baldurs_gate_map.png')
+
+ul
+  - sitemap.resources.select { |r| r.data.dm }.each do |resource|
+    li=link_to(resource.data.title, resource)
